@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Practical1</string>
     <string name="roll">Roll</string>
-    <string name="rollDice">Dice Rolled!</string>
 </resources>
