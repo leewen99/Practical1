@@ -101,10 +101,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun countDice() {
+        //get the text view and put the result inside to it
         val resultText: TextView = findViewById(R.id.result_text)
         val resultText2: TextView = findViewById(R.id.result_text2)
         val resultText3: TextView = findViewById(R.id.result_text3)
 
+        //compare with hello world bcs the original word is be setted to hello world, hallo world = nvr be changed
         if (resultText.text == "Hello World!") {
             resultText.text = "1"
         } else {
@@ -130,12 +132,11 @@ class MainActivity : AppCompatActivity() {
                 diceImage1.setImageResource(drawableResource)
             }
             }
+        //compare with hello world bcs the original word is be setted to hello world, hallo world = nvr be changed
             if (resultText2.text == "Hello World!") {
                 resultText2.text = "1"
             } else {
-                // Otherwise, increment the number up to 6.
-                // The text value in resultText.text is an instance of the CharSequence class;
-                // it needs to be converted to a String object before it can be converted to an int.
+
                 var resultInt2 = resultText2.text.toString().toInt()
 
                 if (resultInt2 < 6) {
@@ -157,6 +158,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
+        //compare with hello world bcs the original word is be setted to hello world, hallo world = nvr be changed
         if (resultText3.text == "Hello World!") {
             resultText3.text = "1"
         } else {
@@ -187,13 +189,15 @@ class MainActivity : AppCompatActivity() {
 
     }
         private fun resetDice() {
+            //get id
             val resultText: TextView = findViewById(R.id.result_text)
             val resultText2: TextView = findViewById(R.id.result_text2)
             val resultText3: TextView = findViewById(R.id.result_text3)
-            // If text is the default "Hello World!" set that text to 1.
+            // put a name
             var resultInt = resultText.text.toString().toInt()
             var resultInt2 = resultText2.text.toString().toInt()
             var resultInt3 = resultText3.text.toString().toInt()
+            //set something
             resultText.text = "0"
             resultText2.text = "0"
             resultText3.text = "0"
